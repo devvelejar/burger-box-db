@@ -12,6 +12,7 @@ resource "aws_db_instance" "db_instance" {
   db_name              = "burger_box"
   username             = "user_burger_box"
   password             = "o]K[tOK33.2d"
+  publicly_accessible  = true
   
   vpc_security_group_ids = ["${var.sgId}"]
 
