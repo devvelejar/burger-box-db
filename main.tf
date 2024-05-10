@@ -13,8 +13,6 @@ resource "aws_db_instance" "db_instance" {
   username             = "user_burger_box"
   password             = "o]K[tOK33.2d"
   
-  db_subnet_group_name = aws_db_subnet_group.subnet_group.name
-
   vpc_security_group_ids = ["${var.sgId}"]
 
   skip_final_snapshot = true
