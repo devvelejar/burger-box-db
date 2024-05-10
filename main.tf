@@ -4,7 +4,7 @@ provider "aws" {
 
 resource "aws_db_instance" "db_instance" {
   identifier           = "burger-box-db"
-  allocated_storage    = 1
+  allocated_storage    = 20
   storage_type         = "gp2"
   engine               = "postgres"
   engine_version       = "16.3"
